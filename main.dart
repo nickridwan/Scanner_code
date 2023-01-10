@@ -42,14 +42,16 @@ class _CheckinPageState extends State<CheckinPage> {
   bool onflash = false;
 
   List<ClubModel> clubId = [
-    ClubModel(id: "SC"),
-    ClubModel(id: "OBP"),
-    ClubModel(id: "M2S"),
-    ClubModel(id: "BLM"),
-    ClubModel(id: "BSR"),
-    ClubModel(id: "MBH"),
-    ClubModel(id: "PLB"),
-    ClubModel(id: "CPK"),
+    ClubModel(id: "test 1"),
+    ClubModel(id: "test 2"),
+    ClubModel(id: "test 3"),
+    ClubModel(id: "test 4"),
+    ClubModel(id: "test 5"),
+    ClubModel(id: "test 6"),
+    ClubModel(id: "test 7"),
+    ClubModel(id: "test 8"),
+    ClubModel(id: "test 9"),
+    ClubModel(id: "test 10"),
   ];
 
   @override
