@@ -3,10 +3,6 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:osbondgym_dash/controllers/route/n_route.dart';
-import 'package:osbondgym_dash/models/club_model.dart';
-import 'package:osbondgym_dash/theme.dart';
-import 'package:osbondgym_dash/views/widgets/snackbar.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
 void main() {
@@ -80,14 +76,11 @@ class _CheckinPageState extends State<CheckinPage> {
           .toList()
           .isNotEmpty) {
         NavigationRoute.routeBack(context);
-        statusAlert(context, "Berhasil Checkin", true);
       } else {
         NavigationRoute.routeBack(context);
-        toashAlert(
-            context, "QR Code Salah", CupertinoIcons.xmark_circle, false);
       }
     } else {
-      toashAlert(context, "QR Code Error", CupertinoIcons.xmark_circle, false);
+
     }
   }
 
